@@ -1,0 +1,21 @@
+React Hooks
+    React has many built in hooks
+    ex: (basic hooks)
+        -useState - use state in a functional component
+        -useEffect - built in hook and runs "side effects" 
+                Fetches data, starting a timer and manually changing the DOM = side effects
+        -useContext
+    Additional hooks:
+        -useReducer
+        -useCallback
+        -useMemo
+        -useRef
+        etc...
+
+        useEffect accept 2 arguments
+        1. Function => side effects, runs after first render
+                - will run after the first render   
+                - will run after all rerenders by default
+                - accept a callback function as its first arguments
+                - returns undefined or a function   
+                    - if your return a function, the function will run b4 the component unmount or b4 the effect runs again
